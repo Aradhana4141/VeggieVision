@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: top;
+    font-family: 'Poppins',sans-serif;
+    
+    }
+body::before {
+  content: ""; /* Required to create the pseudo-element */
+  position: fixed; 
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('Fruits-vs-Vegetables.JPG') center/cover no-repeat;
+  filter: blur(4px) contrast(100%);
+  z-index: -1;  /* behind the text */
+}
+.content{
+    padding: 300px;
+    
+}
+h1,p{
+     
+     text-shadow: 2px 2px 6px rgba(0,0, 0.8); 
+     
+
+}
+button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: rgb(67, 109, 4);
+      font-weight: bold;
+    }
+button:hover{
+cursor: pointer;
+color: rgb(2, 71, 2);
+
+}  
+h1{
+    color:rgb(193, 243, 193) ;
+   
+}  
+p{
+    color: rgb(231, 233, 228);
+    
+}

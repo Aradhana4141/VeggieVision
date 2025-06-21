@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Fruits Vs Vegetable Classifier</title>
+  <!-- ✅ TensorFlow.js (must come FIRST) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0"></script>
+
+  <!-- ✅ Teachable Machine Image Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="content">
+  <h1>🥦VeggieeVission🍎</h1>
+  <p> 🎮 Let’s play a game: Fruits 🍇 Vs Vegetables 🥕! <br>
+📸 Hold an item in front of your webcam, and let the AI 🤖 decide… <br>
+Is it a fruit 🍌 or a vegetable 🥦? <br>
+✨ Let's find out! 🌟<br>
+  </p>
+  <button onclick ="start()"> Start Webcam</button>
+  <button onclick="stopWebcam()">Stop Webcam</button>
+  <!-- Webcam feed goes here -->
+  <div id ="webcam-container"></div>
+  <!-- Predictions will appear here -->
+  <div id="label-container"></div>
+  <!-- JavaScript file -->
+   </div>
+  <script src="script.js"></script>
+</body>
+</html>
